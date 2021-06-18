@@ -1,150 +1,710 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive pricing table.">
-    <title>Pricing Table &ndash; Layout Examples &ndash; Pure</title>
-    <link rel="stylesheet" href="/css/pure/pure-min.css">
-    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="/layouts/pricing/styles.css">
-</head>
-<body>
 
-<div class="pure-menu pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading">Your Logo</a>
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Pricing</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-    </ul>
-</div>
+/**
+ * Content
+ */
 
-<div class="banner">
-    <h1 class="banner-head">
-        Simple Pricing.<br>
-        Try before you buy.
-    </h1>
-</div>
+body {
+	color: #000;
+}
 
-<div class="l-content">
-    <div class="pricing-tables pure-g">
-        <div class="pure-u-1 pure-u-md-1-3">
-            <div class="pricing-table pricing-table-free">
-                <div class="pricing-table-header">
-                    <h2>Personal</h2>
+a:active {
+	opacity: 0.7;
+}
 
-                    <span class="pricing-table-price">
-                        $5 <span>per month</span>
-                    </span>
-                </div>
+.page a.active {
+	opacity: .4;
+}
 
-                <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Custom sub-domain</li>
-                    <li>Standard customer support</li>
-                    <li>1GB file storage</li>
-                    <li>1 database</li>
-                    <li>Unlimited bandwidth</li>
-                </ul>
+i,
+em {
+	font-style: italic;
+}
 
-                <button class="button-choose pure-button">Choose</button>
-            </div>
-        </div>
+b,
+strong {
+	font-weight: bold;
+}
 
-        <div class="pure-u-1 pure-u-md-1-3">
-            <div class="pricing-table pricing-table-biz pricing-table-selected">
-                <div class="pricing-table-header">
-                    <h2>Small Business</h2>
+sub,
+sup {
+	position: relative;
+	vertical-align: baseline;
+}
 
-                    <span class="pricing-table-price">
-                        $25 <span>per month</span>
-                    </span>
-                </div>
+sub {
+	top: 0.3em;
+}
 
-                <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Use your own domain</li>
-                    <li>Standard customer support</li>
-                    <li>10GB file storage</li>
-                    <li>5 databases</li>
-                    <li>Unlimited bandwidth</li>
-                </ul>
+sup {
+	top: -0.4em;
+}
 
-                <button class="button-choose pure-button">Choose</button>
-            </div>
-        </div>
+s {
+	text-decoration: line-through;
+}
 
-        <div class="pure-u-1 pure-u-md-1-3">
-            <div class="pricing-table pricing-table-enterprise">
-                <div class="pricing-table-header">
-                    <h2>Enterprise</h2>
+img {
+	border: 0;
+	padding: 0;
+}
 
-                    <span class="pricing-table-price">
-                        $45 <span>per month</span>
-                    </span>
-                </div>
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
 
-                <ul class="pricing-table-list">
-                    <li>Free setup</li>
-                    <li>Use your own domain</li>
-                    <li>Premium customer support</li>
-                    <li>Unlimited file storage</li>
-                    <li>25 databases</li>
-                    <li>Unlimited bandwidth</li>
-                </ul>
+blockquote {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
 
-                <button class="button-choose pure-button">Choose</button>
-            </div>
-        </div>
-    </div> <!-- end pricing-tables -->
+hr {
+	background: rgba(127, 127, 127, 0.2);
+	border: 0;
+	height: 1px;
+	display: block;
+}
 
-    <div class="information pure-g">
-        <div class="pure-u-1 pure-u-md-1-2">
-            <div class="l-box">
-                <h3 class="information-head">Get started today</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-            </div>
-        </div>
+.content img {
+	float: none;
+	margin-bottom: .5em;
+}
 
-        <div class="pure-u-1 pure-u-md-1-2">
-            <div class="l-box">
-                <h3 class="information-head">Pay monthly or annually</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
-                </p>
-            </div>
-        </div>
+.gallery_image_caption {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.35);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	font-style: normal;
+	line-height: 1.3;	
+}
 
-        <div class="pure-u-1 pure-u-md-1-2">
-            <div class="l-box">
-                <h3 class="information-head">24/7 customer support</h3>
-                <p>
-                    Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-            </div>
-        </div>
+/**
+ * Loading Animation
+ */
 
-        <div class="pure-u-1 pure-u-md-1-2">
-            <div class="l-box">
-                <h3 class="information-head">Cancel your plan anytime</h3>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-    </div> <!-- end information -->
-</div> <!-- end l-content -->
+.loading[data-loading] {
+	position: fixed;
+	bottom: 8px; 
+    left: 8px;
+}
 
-<div class="footer l-box">
-    <p>
-        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
-    </p>
-</div>
+/**
+ * Editor styles
+ */
 
-</body>
-</html>
+[data-predefined-style="true"] bodycopy {
+	font-size: 1.9rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: Rubik, Icons;
+	font-style: normal;
+	line-height: 1.4;
+}
+
+[data-predefined-style="true"] bodycopy a {
+	color: rgba(255, 255, 255, 0.6);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+}
+
+[data-predefined-style="true"] bodycopy a:hover {
+
+}
+
+bodycopy a.image-link,
+bodycopy a.icon-link,
+bodycopy a.image-link:hover,
+bodycopy a.icon-link:hover {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+[data-predefined-style="true"] h1 {
+	font-family: Rubik, Icons;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	font-size: 5.0rem;
+	line-height: 1.1;
+	color: rgba(255, 255, 255, 0.6);
+	}
+
+[data-predefined-style="true"] h1 a {
+	color: rgba(255, 255, 255, 0.75);
+    bordeR: none;
+}
+
+[data-predefined-style="true"] h2 {
+	font-family: Rubik, Icons;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 3rem;
+	line-height: 1.2;
+	}
+
+[data-predefined-style="true"] h2 a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+[data-predefined-style="true"] small {
+	display: inline-block;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	font-family: 'Space Mono', Icons;
+	font-style: normal;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.35);
+    letter-spacing: .05rem;
+}
+
+[data-predefined-style="true"] small a {
+	color: rgba(255, 255, 255, 0.6);
+	border-bottom-width: 0em;
+}
+
+/**
+ * Breakpoints
+ */
+
+
+[data-css-preset] .page {
+    background-color: initial /*!page_bgcolor*/;
+}
+
+.mobile .page,
+[data-css-preset].mobile .page {
+	position: relative;
+	min-height: 10px;
+	max-width: 100%;
+	width: 100%;
+	background-color: transparent /*!page_bgcolor*/;
+}
+
+[data-css-preset] .container {
+	margin-left: 0 /*!content_left*/;
+	margin-right: auto /*!content_left*/;
+	text-align: left /*!text_left*/;
+}
+
+[data-css-preset] body {
+	background-color: rgb(37, 37, 37) /*!body_bgcolor*/;
+}
+
+[data-css-preset] .container_width {
+	width: 100% /*!content_left*/;
+}
+
+[data-css-preset] .content_padding {
+	padding-top: 5rem /*!main_margin*/;
+	padding-bottom: 5rem /*!main_margin*/;
+	padding-left: 5rem /*!main_margin*/;
+	padding-right: 5rem /*!main_margin*/;
+}
+
+
+[data-css-preset] text-limit {
+	display: inline-block /*!text_width*/;
+	max-width: 65rem/*!text_width*/;
+}
+
+/**
+ * Thumbnails
+ */
+
+div[thumbnails] {
+	justify-content: flex-start;
+}
+
+[data-css-preset] .thumbnails {
+   	background-color: transparent/*!thumbnails_bgcolor*/;   
+}
+
+[data-css-preset] .thumbnails_width {
+    width: 100%/*!thumbnails_width*/;
+}
+
+[data-css-preset] [thumbnails-pad] {
+    padding: 2.5rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [thumbnails-gutter] {
+    margin: -5rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-pad] {
+    padding: 0.8rem/*!responsive_thumbnails_padding*/; 
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-gutter] {
+    margin: -1.6rem/*!responsive_thumbnails_padding*/; 
+}
+
+.thumbnails .thumb_image {
+	outline: 1px solid rgba(0,0,0,.12);
+    outline-offset: -1px;
+}
+
+.thumbnails .title {
+    margin-top: 2.0rem;
+    margin-bottom: .3rem;
+    font-size: 1.9rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: Rubik, Icons;
+	font-style: normal;
+	line-height: 1.3;
+}
+
+.thumbnails .tags {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.25);
+	font-family: 'Space Mono', Icons;
+	font-style: normal;
+	line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+.thumbnails .tags a {
+	border-bottom: 0;
+    color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+}
+
+.thumbnails .has_title .tags {
+	margin-top: 0rem;
+}
+
+/**
+ * Site Menu
+ */
+
+[data-css-preset] #site_menu_button {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1;
+    font-size: 28px /*!site_menu_button*/;
+    padding: 6px;
+    line-height: 1;
+    background: rgba(33, 32, 46, 0);
+    position: fixed;
+    top: 1rem /*!site_menu_button*/;
+	right: 1rem /*!site_menu_button*/;
+}
+
+body.mobile #site_menu_button {
+	margin: -6px;
+    font-size: 34px;
+}
+
+#site_menu_button.custom_icon {
+	width: 40px;
+    height: auto;
+}
+
+#site_menu_button.active {
+	display: none;
+}
+
+/**
+ * Site Menu
+ */
+
+#site_menu {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	background: rgba(20, 20, 20, 0.95);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	padding: 20px 30px 90px 30px;
+	max-width: 400px;
+	min-width: 300px;
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+}
+
+body.mobile #site_menu {
+	width: 100%;
+}
+
+#site_menu .page-link a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#site_menu .set-link > a {
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: bold;
+}
+
+#site_menu a:active {
+	opacity: .7;
+}
+
+#site_menu a.active {
+	opacity: .4;
+}
+
+#site_menu .close {
+	display: none;
+	color: rgba(255, 255, 255, 0.4);
+	line-height: .85em;
+	font-size: 45px;
+}
+
+body.mobile #site_menu .close {
+	display: block;
+	font-size: 50px;
+	line-height: 1em;
+}
+
+#site_menu .break {
+	height: 28px;
+}
+
+#site_menu .indent {
+	margin-left: 28px;
+}
+
+/*
+ * Shop Button
+ */
+
+[data-css-preset] #shop_button {
+	color: rgba(255, 255, 255, 1);
+    background: transparent;
+	font-size: 34px;
+    font-style: normal;
+	font-weight: 400;
+    line-height: 1;
+    position: fixed;
+	padding: 6px;
+	top: 1rem /*!shop_button*/;
+	right: 1rem /*!shop_button*/;
+}
+
+#shop_button.text {
+    font-size: 1.4rem;
+	line-height: 1.3;
+	font-family: "Space Mono", Icons;
+	font-style: normal;
+	font-weight: 400;
+    padding: 0;
+    line-height: 1.2;
+}
+
+#shop_button.custom_icon {
+	width: 40px;
+    height: auto;
+}
+
+
+body.mobile #shop_button:not(.text) {
+	margin: -6px;
+    font-size: 38px;
+}
+
+/*
+ * Shop Product Widget
+ */
+
+.shop_product {
+    width: 100%;
+	max-width: 22rem;
+    position: relative;
+    display: block;
+}
+
+.shop_product .price {
+	font-family: "Space Mono", Icons;
+    font-size: 1.4rem;
+	line-height: 1;
+	color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-bottom: 1rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.shop_product .dropdown {
+    font-family: "Space Mono", Icons;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.9);
+    display: inline-block;
+	width: 100%;
+    border: 1px solid rgba(255,255,255,.4);
+    background:  #ffffff url(https://static.cargo.site/assets/images/select-line-arrows.svg) no-repeat right;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    padding: .7rem 2rem .7rem 1rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.shop_product .button {
+    font-family: "Space Mono", Icons;
+	font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 1);
+    flex: 0 0 50%;
+    text-align: left;
+    display: inline-block;
+	line-height: 1;
+    padding: .8rem 1rem .9rem;
+	font-style: normal;
+	font-weight: 400;
+    border-bottom: none;
+}
+
+/*
+ * Image Zoom
+ */
+
+.content img.image-zoom:active {
+  opacity: .7;
+}
+
+/**
+ * Quick View
+ */
+
+[data-css-preset] .quick-view {
+    padding-top: 2.5rem /*!quick_view_padding*/;
+    padding-bottom: 2.5rem /*!quick_view_padding*/;
+    padding-left: 2.5rem /*!quick_view_padding*/;
+    padding-right: 2.5rem /*!quick_view_padding*/;
+    height: 100% /*!quick_view_height*/;
+    width: 100% /*!quick_view_width*/;
+}
+
+body.mobile .quick-view {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+[data-css-preset] .quick-view-background {
+	background: rgba(0, 0, 0, 0.85) /*!quick_view_bgcolor*/;
+}
+
+.quick-view-caption {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+    transition: 100ms opacity ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:3.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.quick-view-caption span {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+
+/**
+ * Quick View Navigation 
+ */
+
+.quick-view-navigation .left-arrow {
+    left: 10px;
+}
+
+.quick-view-navigation .right-arrow {
+    right: 10px;
+}
+
+.quick-view-navigation .left-arrow,
+.quick-view-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 36px;
+    width: 36px;
+}
+
+.quick-view-navigation .left-arrow .inner-color,
+.quick-view-navigation .right-arrow .inner-color {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.quick-view-navigation .left-arrow .outer-color,
+.quick-view-navigation .right-arrow .outer-color {
+    stroke: #000;
+    stroke-width: 2.5px;
+    opacity: 0.6;
+}
+
+.quick-view-navigation .close-button {  
+    top: 10px;
+    right: 10px;
+    /* Change height/width together to scale */
+    width: 36px;
+    height: 36px;
+}
+
+.quick-view-navigation .close-button .inner-color {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.quick-view-navigation .close-button .outer-color {
+    stroke: #000;
+    stroke-width: 2.5px;
+    opacity: 0.6;
+}
+
+/** 
+ * Image Gallery Navigation Arrows 
+ */
+ 
+.image-gallery-navigation .left-arrow,
+.image-gallery-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 36px;
+    width: 36px;
+}
+
+.image-gallery-navigation .left-arrow .inner-color,
+.image-gallery-navigation .right-arrow .inner-color {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.image-gallery-navigation .left-arrow .outer-color,
+.image-gallery-navigation .right-arrow .outer-color {
+    stroke: #000;
+    stroke-width: 2.5px;
+    opacity: 0.6;
+}
+
+/**
+ * Wallpaper Backdrop Navigation Arrows 
+ */
+
+.wallpaper-navigation .left-arrow,
+.wallpaper-navigation .right-arrow {
+   /* Change height/width together to scale */
+   width: 36px;
+   height: 36px;
+}
+
+.wallpaper-navigation .left-arrow .inner-color,
+.wallpaper-navigation .right-arrow .inner-color {
+   stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.wallpaper-navigation .left-arrow .outer-color,
+.wallpaper-navigation .right-arrow .outer-color {
+    stroke: #000;
+    stroke-width: 2.5px;
+    opacity: 0.6;
+}
+
+
+/**
+ * Feed
+ */
+
+.feed .content_container .page {
+    border-top: 0px dashed rgba(0, 0, 0, 0.2);
+}
+
+.feed .content_container .page_container:first-child .page {
+	border-top: 0;
+}
+
+
+/*
+ * Audio Player
+ */
+
+.audio-player {
+    max-width: 36rem;
+    height: 3.3rem;
+    outline: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin: 1px 1px 1em 1px;
+}
+
+body.mobile .audio-player {
+    max-width: 100%;
+}
+
+.audio-player .separator {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.audio-player .button {
+    background: transparent;
+    cursor: pointer;
+    fill: rgba(255, 255, 255, 0.85);
+}
+
+.audio-player .icon {
+    fill: rgba(255, 255, 255, 0.75);
+    padding: 30%;
+    width: 100%;
+    margin: auto;
+}
+
+.audio-player .buffer {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.audio-player .progress {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.audio-player .progress-indicator {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width: 1px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    cursor: ew-resize;
+}
+
+.audio-player .note-icon {
+    height: 100%;
+    width: 3.8rem;
+    padding: 1rem;
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.audio-player .current-time {
+    padding-left: 1rem;
+}
+
+.audio-player .total-time {
+    padding-right: 1rem;
+}
+
+
